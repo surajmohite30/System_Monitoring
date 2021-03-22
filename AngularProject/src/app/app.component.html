@@ -1,0 +1,25 @@
+
+<div class="alert alert-danger" role="alert">
+    <h1 id="head"><img src="https://cdn.icon-icons.com/icons2/1495/PNG/512/deepinsystemmonitor_102968.png" width="50px" height="50px">
+        System Monitoring<img src="https://cdn.icon-icons.com/icons2/1495/PNG/512/deepinsystemmonitor_102968.png" width="50px" height="50px">
+          <h4 class="card bg-danger text-white">{{today | date:'medium'}}</h4></h1>
+     </div>
+    
+<div class="row">
+    <div class="column1" [chart]="chartstock" style="height: 500px">
+
+    </div>
+    <div class="column2" >
+        <div class="card bg-warning text-white">
+            <span class="badge badge-secondary" *ngIf="diskStatus">MEMORY STATUS {{diskStatus ? 'down':'diskStatus'}}</span></div>
+        show = {{show}}
+    <br>
+    <div *ngIf="show">Text to show</div>
+        <div [chart]="chart"></div>
+            <button class="btn btn-info" (click)="MemoryUse()">Update Memory Usage</button>
+           
+    </div>
+    
+  </div>
+
+<router-outlet></router-outlet>

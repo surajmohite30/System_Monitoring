@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: actuator.spring
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Suraj
+Implementation-Vendor-Id: com.sam
+Build-Jdk: 1.8.0_271
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/actuator.spring
+Created-By: Maven Integration for Eclipse
+
